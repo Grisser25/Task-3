@@ -1,0 +1,86 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Name: Tool Properties
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Enabled: true
+      Name: Grid
+      Plane: XY
+    - Class: rviz_default_plugins/RobotModel
+      Enabled: true
+      Name: RobotModel
+      Description Topic:
+        Value: /robot_description
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Name: TF
+    - Class: rviz_default_plugins/PointCloud2
+      Enabled: true
+      Name: Side1
+      Topic:
+        Value: /sensor_side_1/depth_cloud
+      Size (Pixels): 3
+      Style: Flat Squares
+    - Class: rviz_default_plugins/PointCloud2
+      Enabled: true
+      Name: Side2
+      Topic:
+        Value: /sensor_side_2/depth_cloud
+      Size (Pixels): 3
+      Style: Flat Squares
+    - Class: rviz_default_plugins/PointCloud2
+      Enabled: true
+      Name: Side3
+      Topic:
+        Value: /sensor_side_3/depth_cloud
+      Size (Pixels): 3
+      Style: Flat Squares
+    - Class: rviz_default_plugins/PointCloud2
+      Enabled: true
+      Name: Side4
+      Topic:
+        Value: /sensor_side_4/depth_cloud
+      Size (Pixels): 3
+      Style: Flat Squares
+    - Class: rviz_default_plugins/PointCloud2
+      Enabled: true
+      Name: Side5
+      Topic:
+        Value: /sensor_side_5/depth_cloud
+      Size (Pixels): 3
+      Style: Flat Squares
+    - Class: rviz_default_plugins/PointCloud2
+      Enabled: true
+      Name: Bottom
+      Topic:
+        Value: /sensor_bottom/depth_cloud
+      Size (Pixels): 3
+      Style: Flat Squares
+  Enabled: true
+  Fixed Frame: base_link
+Tools:
+  - Class: rviz_default_plugins/Interact
+  - Class: rviz_default_plugins/MoveCamera
+  - Class: rviz_default_plugins/Select
+  - Class: rviz_default_plugins/FocusCamera
+  - Class: rviz_default_plugins/Measure
+  - Class: rviz_default_plugins/SetInitialPose
+  - Class: rviz_default_plugins/SetGoal
+Views:
+  Current:
+    Class: rviz_default_plugins/Orbit
+    Distance: 7
+    Focal Point:
+      X: 0
+      Y: 0
+      Z: 0.5
+    Pitch: 0.7
+    Yaw: 0.8
